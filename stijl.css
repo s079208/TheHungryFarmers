@@ -1,0 +1,108 @@
+#voor, #midden, #achter{
+  background-color: #432918;
+  height: 10px;
+  width: 45px;
+  border-radius: 5rem;
+  transition-property: all;
+	transition-duration: 1s;
+}
+#voor, #midden{  margin-bottom: 5px;}
+#hamburger{
+  position: fixed;
+  right: 3rem;
+  top: 15rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+#voor{  transform-origin: left top;}
+#achter{  transform-origin: left bottom;}
+/*#hamburger #voor{
+  transform: rotate(47deg);}
+#hamburger #achter{
+  transform: rotate(-47deg);}
+#hamburger #midden{
+    transform: translateX(-100px);}*/
+* {
+color: #432918;
+}
+
+a, p, div{
+  font-family: "American Typewriter";
+}
+
+body{
+  background-color: #F4D897
+}
+
+header{
+  position: fixed;
+  height: 10rem;
+  width: 100%
+}
+a{
+  text-decoration: none;
+}
+
+nav div a{
+  background-color: #F4D897;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+nav div{
+  position: absolute;
+  background-color: #D4A25A;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+.banner{
+  position: fixed;
+  width: 100%;
+  height: 15rem;
+  background-color: #D4A25A;
+}
+
+#logo{
+  visibility: hidden;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: 10rem;
+}
+
+#bannerTekst{
+  font-size: 4rem;
+  text-align: center;
+  padding: 40%;
+}
+
+.baseLine{
+  margin-top:1rem;
+  font-size: 2rem;
+}
+
+.verborgen{
+  visibility: hidden;
+}
+
+@media (min-width: 700px) {
+  #logo{
+    visibility: visible;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: 10rem;
+  }
+  nav div{
+      width: 30rem;
+  }
+}
