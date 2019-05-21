@@ -9,8 +9,8 @@
 #voor, #midden{  margin-bottom: 5px;}
 #hamburger{
   position: fixed;
-  right: 3rem;
-  top: 15rem;
+  right: 4rem;
+  top: 4rem;
   padding: 1rem;
   border-radius: 1rem;
   overflow: hidden;
@@ -27,8 +27,9 @@
 color: #432918;
 }
 
-a, p, div{
+a, p, div, h2, h3{
   font-family: "American Typewriter";
+  text-align: center;
 }
 
 body{
@@ -38,10 +39,45 @@ body{
 header{
   position: fixed;
   height: 10rem;
-  width: 100%
+  width: 100vw
 }
+
+main{
+  width: 75vw;
+  margin: auto;
+  padding-top: 18rem;
+  padding-bottom: 5rem;
+}
+
+footer{
+
+}
+
+h1{
+  padding-top:2rem;
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+h3  {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2.4rem;
+}
+
 a{
   text-decoration: none;
+
 }
 
 nav div a{
@@ -64,6 +100,14 @@ nav div{
   width: 100vw;
 }
 
+video{
+  border-radius: 100%;
+  width: 400px;
+  height: 300px;
+  margin: 5rem auto 2rem;
+  display: block;
+}
+
 .banner{
   position: fixed;
   width: 100%;
@@ -71,8 +115,29 @@ nav div{
   background-color: #D4A25A;
 }
 
+#persona1, #persona2, #persona3, #persona4{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+#persona1 img, #persona2 img, #persona3 img, #persona4 img{
+  width: 25rem;
+  margin-bottom: 1rem;
+  border-radius: 5rem;
+}
+
+#GNDWB{
+  background-color: #D4A25A;
+  font-size: 2rem;
+  border-radius: 1rem;
+  height: 4rem;
+  width: 15rem;
+  padding:1rem;
+  display: none;
+  margin: auto;
+}
+
 #logo{
-  visibility: hidden;
+  visibility: visible;
   position: absolute;
   top: 3rem;
   left: 3rem;
@@ -80,9 +145,13 @@ nav div{
 }
 
 #bannerTekst{
-  font-size: 4rem;
+  visibility: hidden;
   text-align: center;
   padding: 40%;
+}
+
+#bannerTekst p{
+  font-size: 2rem;
 }
 
 .baseLine{
@@ -95,14 +164,59 @@ nav div{
 }
 
 @media (min-width: 700px) {
-  #logo{
+  #bannerTekst{
     visibility: visible;
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
-    width: 10rem;
   }
+
   nav div{
       width: 30rem;
+  }
+
+  .baseLine{
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 50vw;
+    margin: auto;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  .smart{
+    display: 	grid;
+    grid-gap: 2rem;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 16rem 15rem 20rem 15rem 15rem
+  }
+  .doelstellingen{
+    grid-column: 1 / 3;
+    grid-row: 1/2 ;
+  }
+  .specifiek{
+    grid-row: 2 / 3;
+  }
+  .meetbaar{
+    grid-row: ;
+  }
+  .aanvaardbaar{
+    grid-row: ;
+  }
+  .realistisch{
+    grid-row: ;
+  }
+  .tijd{
+    grid-row: ;
+  }
+
+  video{
+    border-radius: 100%;
+    width: auto;
+    height: auto;
+  }
+  #GNDWB{
+    font-size: 6rem;
+    height: 8rem;
+    width: 60rem;
   }
 }

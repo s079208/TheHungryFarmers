@@ -1,6 +1,7 @@
 let mijnHamburger = document.querySelector('#hamburger')
 let mijnNav = document.querySelector('nav')
 let mijnClose = document.querySelector("#closeButton")
+let mijnGNDWB = document.querySelector("#GNDWB")
 
 
 
