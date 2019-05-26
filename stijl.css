@@ -1,222 +1,95 @@
-#voor, #midden, #achter{
-  background-color: #432918;
-  height: 10px;
-  width: 45px;
-  border-radius: 5rem;
-  transition-property: all;
-	transition-duration: 1s;
-}
-#voor, #midden{  margin-bottom: 5px;}
-#hamburger{
-  position: fixed;
-  right: 4rem;
-  top: 4rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  overflow: hidden;
-}
-#voor{  transform-origin: left top;}
-#achter{  transform-origin: left bottom;}
-/*#hamburger #voor{
-  transform: rotate(47deg);}
-#hamburger #achter{
-  transform: rotate(-47deg);}
-#hamburger #midden{
-    transform: translateX(-100px);}*/
-* {
-color: #432918;
-}
+/*#f7e6bc,#f4d897,fd4aa2a,#a66a2a,#634121*/
+
 
 a, p, div, h2, h3{
   font-family: "American Typewriter";
   text-align: center;
 }
-
-body{
-  background-color: #F4D897
-}
-
-header{
-  position: fixed;
-  height: 10rem;
-  width: 100vw
-}
-
-main{
-  width: 75vw;
-  margin: auto;
-  padding-top: 18rem;
-  padding-bottom: 5rem;
-}
-
-footer{
-
-}
-
 h1{
-  padding-top:2rem;
-  font-size: 4rem;
+  color: white ;
+  padding-top:5rem;
+  font-size: 20rem;
+
 }
 
 h2{
+  font-size: 4rem;
+  margin-bottom: 1.6rem;
+}
+h3{
   font-size: 3rem;
   margin-bottom: 1.6rem;
-  text-align: center;
 }
-
-h3  {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
 p{
   font-size: 2rem;
   margin-bottom: 1rem;
   line-height: 2.4rem;
 }
-
 a{
   text-decoration: none;
-
 }
-
-nav div a{
-  background-color: #F4D897;
-  border-radius: 1rem;
-  padding: 1rem;
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-nav div{
-  position: absolute;
-  background-color: #D4A25A;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 6rem;
+.backgroundIndex{
+  background-image: url(afb/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   width: 100vw;
 }
 
-video{
-  border-radius: 100%;
-  width: 400px;
-  height: 300px;
-  margin: 5rem auto 2rem;
-  display: block;
-}
-
-.banner{
-  position: fixed;
-  width: 100%;
-  height: 15rem;
-  background-color: #D4A25A;
-}
-
-#persona1, #persona2, #persona3, #persona4{
-  text-align: center;
+.backgroundIndex h1{
+  padding-top: 30rem;
   margin-bottom: 5rem;
 }
-#persona1 img, #persona2 img, #persona3 img, #persona4 img{
-  width: 25rem;
-  margin-bottom: 1rem;
-  border-radius: 5rem;
+.backgroundIndex a{
+  font-size: 5rem;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  background-color: #f4d897;
+  color:#a66a2a;
+  transition-duration: 0.4s;
+  animation: verander 4s;
+  animation-iteration-count: infinite;
 }
 
-#GNDWB{
-  background-color: #D4A25A;
-  font-size: 2rem;
-  border-radius: 1rem;
-  height: 4rem;
-  width: 15rem;
-  padding:1rem;
-  display: none;
-  margin: auto;
+.backgroundIndex a:hover{
+  background-color: #a66a2a;
+  color: white;
+}
+@keyframes verander {
+  0%{
+    background-color: #f4d897;
+    color:#a66a2a;
+  }
+  50%{
+    background-color: #a66a2a;
+    color: white;
+  }
+  100%{
+    background-color: #f4d897;
+    color:#a66a2a;
+  }
 }
 
-#logo{
-  visibility: visible;
+
+
+.onderschrift{
   position: absolute;
-  top: 3rem;
-  left: 3rem;
-  width: 10rem;
-}
-
-#bannerTekst{
-  visibility: hidden;
-  text-align: center;
-  padding: 40%;
-}
-
-#bannerTekst p{
-  font-size: 2rem;
-}
-
-.baseLine{
-  margin-top:1rem;
-  font-size: 2rem;
-}
-
-.verborgen{
-  visibility: hidden;
+  bottom: 5rem;
+  left: 5rem;
+  font-size: 3rem;
+  color: white;
 }
 
 @media (min-width: 700px) {
-  #bannerTekst{
-    visibility: visible;
+  .backgroundIndex h1{
+    padding-top: 10rem;
+    margin-bottom: 5rem;
   }
-
-  nav div{
-      width: 30rem;
-  }
-
-  .baseLine{
-    font-size: 3rem;
-    line-height: 3rem;
-    width: 50vw;
-    margin: auto;
-  }
-
 }
 
 @media (min-width: 1000px) {
 
-  .smart{
-    display: 	grid;
-    grid-gap: 2rem;
-    grid-template-columns:  1fr 1fr;
-    grid-template-rows: 16rem 15rem 20rem 15rem 15rem
-  }
-  .doelstellingen{
-    grid-column: 1 / 3;
-    grid-row: 1/2 ;
-  }
-  .specifiek{
-    grid-row: 2 / 3;
-  }
-  .meetbaar{
-    grid-row: ;
-  }
-  .aanvaardbaar{
-    grid-row: ;
-  }
-  .realistisch{
-    grid-row: ;
-  }
-  .tijd{
-    grid-row: ;
-  }
 
-  video{
-    border-radius: 100%;
-    width: auto;
-    height: auto;
-  }
-  #GNDWB{
-    font-size: 6rem;
-    height: 8rem;
-    width: 60rem;
-  }
 }
