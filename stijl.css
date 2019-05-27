@@ -1,14 +1,65 @@
-/*#f7e6bc,#f4d897,fd4aa2a,#a66a2a,#634121*/
-.deel1, .deel3{
-  height: 100vh;
-  width: 100vw;
+.visible{
+  visibility: hidden;
 }
+.pijlonder{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  transform:  scale(0.5) rotate(-90deg);
+  right: 5rem;
+  bottom: 5rem;
+}
+.pijl{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  transform:  scale(0.5) rotate(90deg);
+  right: 5rem;
+  bottom: 5rem;
+}
+.overflow{
+  position: absolute;
+  overflow: hidden;
+  height: 10rem;
+  width: 5rem;
+  background-color: #a66a2a;
+  left:50%;
+  top: 0%
+}
+.driehoek{
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  background-color: #f7e6bc;
+  transform: rotate(45deg);
+  left:-50%;
+  top:25%;
+  border-radius: .5rem;
+
+}
+.vierkant{
+  height: 10rem;
+  width: 10rem;
+  background-color: #a66a2a
+}
+.balk{
+  position: absolute;
+  background-color: #f7e6bc;
+  height: 3rem;
+  width: 5rem;
+  top: 35%;
+  left: 15%;
+  border-radius: .5rem;
+}
+/*#f7e6bc,#f4d897,fd4aa2a,#a66a2a,#634121*/
 .deel1{
   background-image: url(afb/farmland.jpg);
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 8vh;
+  padding: 5rem;
+  height: 100vh;
 }
 .deel2{
   background-size: cover;
@@ -28,7 +79,8 @@
   background-image: url(afb/vrouw.jpg);
   position: relative;
   padding-top: 8vh;
-  height: 210vh;
+  height: 200vh;
+  padding: 5rem;
 }
 a, p, div, h2, h3{
   font-family: "American Typewriter";
@@ -49,8 +101,12 @@ h3{
   font-size: 3rem;
   margin-bottom: 1.6rem;
 }
-p{
+em{
   font-size: 2rem;
+  font-weight: bold;
+}
+p{
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   line-height: 2.4rem;
 }
@@ -73,7 +129,10 @@ nav a{
 nav a:hover{
   background-color: rgba(166, 106, 42, 0.8) ;
   color: rgba(247, 230, 188, 0.8);
-  border: .2rem solid #634121;
+}
+.midden{
+  margin: auto;
+  width: 400px
 }
 .backgroundIndex{
   background-image: url(afb/bg1.jpg);
@@ -88,7 +147,7 @@ nav a:hover{
   margin-bottom: 5rem;
 }
 .backgroundIndex a{
-  margin: 2rem auto;
+  margin-left: 10%;
   font-size: 5rem;
   border-radius: 2rem;
   padding: 1.5rem;
@@ -138,7 +197,7 @@ nav a:hover{
   margin: auto;
   max-width: 400px;
 }
-.product a:hover, #afrekenen:hover {
+.product a:hover,#afrekenen:hover {
   color: white;
   background-color:
 }
@@ -189,10 +248,6 @@ nav a:hover{
   .deel3{
     height: 130vh;
   }
-  .deel2{
-
-    /*height: 80vh;*/
-  }
   .shop{
     display: grid;
     width: 800px;
@@ -207,8 +262,9 @@ nav a:hover{
     margin-bottom: 0rem;
   }
   .kader{
+    margin-left: -10rem;
     width: 1000px;
-    margin-top: 20vh;
+    margin-top: 15vh;
   }
   .kader h2, .kader p, nav a{
     margin: auto;
@@ -217,16 +273,21 @@ nav a:hover{
     display: grid;
     grid-template-columns: 700px 600px;
     grid-gap: 0rem;
-
   }
   nav{
     display: grid;
     grid-template-columns: 200px 200px;
-    grid-template-rows: 220px 220px;
+    grid-template-rows: 200px 200px;
+    margin-left: -10rem;
+    padding-top: 5rem;
   }
   nav a{
-    height: 220px;
+    height: 200px;
     width:200px;
-    padding-top: 10rem;
+    padding-top: 45%;
+
+  }
+  .visible {
+    visibility: visible;
   }
 }
