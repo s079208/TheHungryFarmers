@@ -1,20 +1,49 @@
 /*#f7e6bc,#f4d897,fd4aa2a,#a66a2a,#634121*/
+.deel1, .deel3{
+  height: 100vh;
+  width: 100vw;
+}
+.deel1{
+  background-image: url(afb/farmland.jpg);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 8vh;
+}
+.deel2{
+  background-size: cover;
+  background-repeat: repeat;
+  background-image: url(afb/trevorCole.jpg);
+  padding: 2rem;
+  position: relative;
+}
+.shop{
+  width: 400px;
+  margin:auto;
 
-
+}
+.deel3{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(afb/vrouw.jpg);
+  position: relative;
+  padding-top: 8vh;
+  height: 210vh;
+}
 a, p, div, h2, h3{
   font-family: "American Typewriter";
-  text-align: center;
 }
 h1{
   color: white ;
   padding-top:5rem;
-  font-size: 20rem;
-
+  font-size: 10rem;
+  text-align: center;
 }
-
 h2{
   font-size: 4rem;
   margin-bottom: 1.6rem;
+  text-align: center ;
+
 }
 h3{
   font-size: 3rem;
@@ -25,8 +54,26 @@ p{
   margin-bottom: 1rem;
   line-height: 2.4rem;
 }
+h2, .kader p, nav a, .actie{
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 400px;
+  background-color: rgba(247, 230, 188, 0.8);
+  color: black;
+}
 a{
   text-decoration: none;
+}
+nav a{
+  text-align: center;
+  display: block;
+  line-height: 100%;
+  font-size: 2rem;
+}
+nav a:hover{
+  background-color: rgba(166, 106, 42, 0.8) ;
+  color: rgba(247, 230, 188, 0.8);
+  border: .2rem solid #634121;
 }
 .backgroundIndex{
   background-image: url(afb/bg1.jpg);
@@ -36,12 +83,12 @@ a{
   height: 100vh;
   width: 100vw;
 }
-
 .backgroundIndex h1{
   padding-top: 30rem;
   margin-bottom: 5rem;
 }
 .backgroundIndex a{
+  margin: 2rem auto;
   font-size: 5rem;
   border-radius: 2rem;
   padding: 1.5rem;
@@ -52,10 +99,61 @@ a{
   animation: verander 4s;
   animation-iteration-count: infinite;
 }
-
 .backgroundIndex a:hover{
   background-color: #a66a2a;
   color: white;
+}
+.onderschrift{
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  font-size: 1.6rem;
+  color: white;
+}
+.product{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(247, 230, 188, 0.8);;
+  padding:2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.product img{
+  display: inline;
+  width: 150px;
+  margin-bottom: 1rem;
+}
+.product a{
+  margin-top: 1rem;
+  background-color: #d4aa2a;
+  padding: .6rem 1.6rem;
+  border-radius: 1rem;
+  position: absolute;
+  right: 6rem;
+  bottom: 1rem;
+  font-size: 2rem;
+  color: black;
+}
+.actie{
+  margin: auto;
+  max-width: 400px;
+}
+.product a:hover, #afrekenen:hover {
+  color: white;
+  background-color:
+}
+#afrekenen{
+  display: block;
+  width: 20rem;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #D4A25A;
+  border-radius: 1rem;
+  padding: 1rem 2rem 1rem;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 5rem;
 }
 @keyframes verander {
   0%{
@@ -71,25 +169,64 @@ a{
     color:#a66a2a;
   }
 }
-
-
-
-.onderschrift{
-  position: absolute;
-  bottom: 5rem;
-  left: 5rem;
-  font-size: 3rem;
-  color: white;
-}
-
-@media (min-width: 700px) {
+@media (min-width: 1150px) {
   .backgroundIndex h1{
     padding-top: 10rem;
     margin-bottom: 5rem;
   }
-}
+  .problemen{
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 310px 310px 310px;
+    grid-gap: 2rem;
+  }
+  .actie{
+    height: 310px;
+    width: 400px;
+  }
+  .deel3{
+    height: 130vh;
+  }
+  .deel2{
 
-@media (min-width: 1000px) {
+    /*height: 80vh;*/
+  }
+  .shop{
+    display: grid;
+    width: 800px;
+    margin:auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .product{
+    width: 400px;
+    margin-bottom: 0rem;
+  }
+  .kader{
+    width: 1000px;
+    margin-top: 20vh;
+  }
+  .kader h2, .kader p, nav a{
+    margin: auto;
+  }
+  .deel1{
+    display: grid;
+    grid-template-columns: 700px 600px;
+    grid-gap: 0rem;
 
-
+  }
+  nav{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 220px 220px;
+  }
+  nav a{
+    height: 220px;
+    width:200px;
+    padding-top: 10rem;
+  }
 }
